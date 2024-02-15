@@ -1,0 +1,271 @@
+/* static/css/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper .header {
+    height: 5%;
+    width: 100%;
+    background-color: lightslategrey;
+    text-align: center;
+}
+
+.wrapper .header ul {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Vertically align items in the center */
+}
+
+.wrapper .header li {
+    margin: 0 20px; /* Adjust spacing between list items */
+}
+
+.wrapper .header a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.wrapper .header a:hover {
+    color: #ffeb3b; /* Change color on hover */
+}
+
+.wrapper .content {
+    text-align: center;
+    margin: 10px;
+    overflow: auto;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.wrapper .content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.wrapper .content label {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.wrapper .content select {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.wrapper .content button {
+    padding: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper .content button:hover {
+    background-color: #0056b3;
+}
+
+.wrapper .content h1 {
+    margin-bottom: 20px; /* Add some margin below the h1 */
+}
+
+.wrapper .content .recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.wrapper .content .recommendations > div {
+    text-align: center;
+    margin: 10px;
+}
+
+/* New styles for posters */
+.wrapper .content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+
+.wrapper .content1 {
+    height: 600px;
+    margin: 20px;
+    margin-top: 10px;
+    background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('{% static "images/cover_image.jpg" %}');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.wrapper .content1 h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.wrapper .content1 p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.wrapper .content1 .btn {
+    padding: 12px 20px;
+    background-color: #fff;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wrapper .content1 .btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+.wrapper .content2 {
+    height: auto;
+    margin: 20px;
+    margin-top: 10px;
+    padding: 20px;
+    background-color: #1a1a1a; /* Dark background color */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for a modern look */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Box shadow for depth */
+}
+
+.wrapper .content2 h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.wrapper .content2 .feature {
+    width: 80%; /* Adjust the width as needed */
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #333; /* Feature box background color */
+    border-radius: 8px; /* Rounded corners for feature boxes */
+}
+
+/* Add this CSS to your existing styles */
+
+.wrapper .content2 .feature img {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width to avoid excessive stretching */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing around images */
+    margin: 0 auto; /* Center the images within the container */
+}
+
+
+.wrapper .content2 h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wrapper .content2 p {
+    font-size: 16px;
+}
+
+.wrapper .content3 {
+    background-color: #f7f7f7; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+.wrapper .content3 h2 {
+    color: #333; /* Dark text color for headings */
+    text-align: center;
+}
+
+.wrapper .content3 p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Slightly darker text color */
+}
+
+.wrapper .content3 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wrapper .content3 li {
+    margin-bottom: 10px;
+}
+
+.wrapper .content3 strong {
+    color: #007bff; /* Blue color for strong text */
+}
+
+.wrapper .content3 a {
+    color: #007bff; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.wrapper .content3 a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+.wrapper .footer {
+    text-align: center;
+    width: 100%;
+    height: 5%;
+    background-color:#999999;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 600px) {
+    select {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+}
