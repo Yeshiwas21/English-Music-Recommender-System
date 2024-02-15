@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Recommended Musics Page {% endblock title %}
+
+{% block content %}
+<div class="wrapper">
+    <div class="content">
+        <h1>Recommended Songs for: <b>{{ selected_song }}</b> </h1>
+        <div class="recommendations">
+            {% for song, artist, poster in recommendations %}
+                <div>
+                    <h3>{{ artist }} - {{ song }} </h3>
+                    <img src="{{ poster }}" alt="{{ song }} poster">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock content %}

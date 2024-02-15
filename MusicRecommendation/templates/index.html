@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home {% endblock title %}
+
+{% block content %}
+
+<div class="wrapper">
+  
+    <div class="content1">
+        <img src="{% static 'images/bg1.jpeg' %}" alt="MelodyHub Cover Image">
+        <h1>MelodyHub</h1>
+        <p>Your one-stop music recommendation platform</p>
+        <p>Explore a world of music and discover personalized recommendations just for you.</p>
+        <a href="{% url 'recommend-songs' %}" class="btn">Explore MelodyHub</a>
+    </div>
+
+    <!-- Content2: Feature Section -->
+    <div class="content2">
+        <h2>Key Features</h2>
+
+        <!-- Feature 1: Content-Based Recommendations -->
+        <div class="feature">
+            <!-- Replace the following image with an icon or representation -->
+            <img src="{% static 'images/recommendations.jpg' %}" alt="Content-Based Recommendations">
+            <h3>Content-Based Recommendations</h3>
+            <p>Discover new songs similar to your selected song based on their content and characteristics.</p>
+        </div>
+
+        <!-- Feature 2: User Song Selection -->
+        <div class="feature">
+            <!-- Replace the following image with an icon or representation -->
+            <img src="{% static 'images/selection.jpg' %}" alt="User Song Selection">
+            <h3>User Song Selection</h3>
+            <p>Choose a favorite song, and our system will provide personalized recommendations based on your selection.</p>
+        </div>
+
+        <!-- Feature 3: Spotify Integration -->
+        <div class="feature">
+            <!-- Replace the following image with an icon or representation -->
+            <img src="{% static 'images/spotify_integration_icon.jpeg' %}" alt="Spotify Integration">
+            <h3>Spotify Integration</h3>
+            <p>Explore the world of music with MelodifyHub! Enjoy personalized song recommendations generated using advanced content similarity techniques.</p>
+            <p> Our recommendation engine analyzes the content of songs to provide tailored suggestions, ensuring a delightful musical experience.</p>
+        </div>
+    </div>
+
+
+    <div class="content3">
+        <h2>About MelodifyHub</h2>
+
+        <p>
+            MelodifyHub is a music recommendation project developed by Yeshiwas Dagnaw. It was inspired by a passion for music and the desire to create a personalized music recommendation system.
+            This project is a result of individual efforts and learning at Holberton School.
+        </p>
+    
+        <!-- Team Members -->
+        <h3>Meet the Developer</h3>
+        <ul>
+            <li>
+                <strong>Yeshiwas Dagnaw</strong>
+                <br>
+                A passionate developer with a love for music and a commitment to creating innovative solutions.
+            </li>
+        </ul>
+    
+        <!-- Project Timeline -->
+        <h3>Project Timeline</h3>
+        <p>
+            MelodifyHub was developed as a Portfolio Project at Holberton School. The journey involved learning and implementing music recommendation algorithms based on content similarity.
+        </p>
+    
+        <!-- Holberton School Information -->
+        <h3>Holberton School</h3>
+        <p>
+            This project is part of the educational experience at <a href="https://www.holbertonschool.com/" target="_blank">Holberton School</a>.
+        </p>
+    
+        <!-- Contact Information -->
+        <h3>Contact</h3>
+        <p>
+            For inquiries or collaboration opportunities, feel free to <a href="mailto:your.email@example.com">email</a>.
+        </p>
+    
+        <!-- GitHub Repository Link -->
+        <h3>GitHub Repository</h3>
+        <p>
+            Explore the code on the <a href="#" target="_blank">GitHub Repository</a>.
+        </p>
+    </div>
+</div>
+
+{% endblock content %}

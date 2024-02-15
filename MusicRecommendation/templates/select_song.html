@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Recommendation Page {% endblock title %}
+
+{% block content %}
+
+<div class="wrapper">
+    <div class="content">
+        
+        <form method="post" action="{% url 'recommend-songs' %}">
+            {% csrf_token %}
+            <label for="selected_song">Select a Song:</label>
+            <select name="selected_song" id="selected_song" required>
+                {% for song in music_list %}
+                    <option value="{{ song }}">{{ song }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Get Recommendations</button>
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

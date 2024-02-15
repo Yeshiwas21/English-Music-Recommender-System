@@ -1,0 +1,37 @@
+<!-- base.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+
+    <style>
+        :root {
+            --background-image: url('{% static "images/bg1.jpeg" %}');
+        }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <!-- Header content goes here -->
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'recommend-songs' %}">Get Recommendations</a></li>
+                <li><a href="#"> About Us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            {% block content %} {% endblock content %}
+        </div>
+        <div class="footer">
+            <!-- Footer content goes here -->
+            <p>&copy; 2024 Music Recommender System</p>
+        </div>
+    </div>
+</body>
+</html>
