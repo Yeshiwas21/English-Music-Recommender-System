@@ -6,7 +6,7 @@ MelodifyHub is a music recommendation web application that leverages cosine simi
 
 - **Deployed Site**: [MelodifyHub](#)
 - **Final Project Blog Article**: [Read Blog](#)
-- **Author(s) LinkedIn**: [Author1](#), [Author2](#)
+- **Author(s) LinkedIn**: [Yeshiwas Dagnaw](linkedin.com/in/yeshiwas-dagnaw-alemu-961318172)
 
 ![MelodifyHub Screenshot](./path/to/screenshot.png)
 
