@@ -5,10 +5,10 @@
 MelodifyHub is a music recommendation web application that leverages cosine similarity to provide personalized song recommendations based on content similarity. Seamlessly connecting with the Spotify API, users can discover new songs related to their preferences.
 
 - **Deployed Site**: [MelodifyHub](#)
-- **Final Project Blog Article**: [Read Blog](#)
+- 
 - **Author(s) LinkedIn**: [Yeshiwas Dagnaw](linkedin.com/in/yeshiwas-dagnaw-alemu-961318172)
 
-![MelodifyHub Screenshot](./path/to/screenshot.png)
+![MelodifyHub Screenshot] (https://i.postimg.cc/SQ8RR9g7/Home.jpg) (https://i.postimg.cc/02Q4ZYh7/Music-Selection-Page.jpg)
 
 ## Installation
 
