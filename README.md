@@ -16,4 +16,6 @@ Follow these steps to set up MelodifyHub locally:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/melodifyhub.git
+   git clone https://github.com/Yeshiwas21/English-Music-Recommender-System
+2. then install django-admin
+3. install required python libraries
